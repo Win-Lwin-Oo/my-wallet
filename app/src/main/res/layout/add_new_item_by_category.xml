@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp">
+
+    <RelativeLayout
+        android:elevation="1dp"
+        android:id="@+id/add_new_item_title_by_category"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/item_cancel_btn_by_category"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_black_24dp"
+            android:rotation="180"/>
+
+        <TextView
+            android:layout_toEndOf="@id/item_cancel_btn_by_category"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_item"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/add_new_item_title_by_category"
+        android:padding="16dp"
+        android:id="@+id/add_new_item_title_below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/today_date_by_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/app_name"
+            android:drawableLeft="@drawable/ic_date_range_orange_24dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <RelativeLayout
+            android:id="@+id/spinner_layout"
+            android:layout_below="@id/today_date_by_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/spinner_layout_style">
+
+            <Spinner
+                android:id="@+id/category_list_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_below="@id/spinner_layout"
+            android:id="@+id/new_usage_amount_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/new_usage_amount_by_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/new_usage_amount"
+                android:inputType="number"
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_coin_down"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/new_usage_amount_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/new_usage_name_by_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/about_usage"
+                android:singleLine="true"
+                android:drawableStart="@drawable/ic_mode_edit_black_24dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/save_new_item_by_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/save"
+        android:layout_below="@id/add_new_item_title_below"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="16dp"/>
+
+</RelativeLayout>

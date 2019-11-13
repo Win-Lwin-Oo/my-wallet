@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:elevation="3dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/top_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/category_background_style">
+
+        <ImageView
+            android:id="@+id/category_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_noti"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/fake_text"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:visibility="invisible"
+        android:text="@string/item_count"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:elevation="4dp"
+        android:layout_marginStart="9dp"
+        android:layout_toEndOf="@id/fake_text"
+        android:layout_alignParentTop="true"
+        android:id="@+id/total_item_count_layout"
+        android:visibility="invisible"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/item_count_noti_style">
+
+        <TextView
+            android:id="@+id/total_item_count"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8dp"
+            android:text="@string/item_count"
+            android:textColor="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_marginTop="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/top_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        android:text="Demo"/>
+</RelativeLayout>

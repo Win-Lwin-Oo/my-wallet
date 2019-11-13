@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MyWallet</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_more">More</string>
+
+    <string name="total_usage">Total usage</string>
+    <string name="add_new_category">New category</string>
+    <string name="add_new_item">New usage</string>
+    <string name="save">SAVE</string>
+    <string name="category_name">Category name</string>
+    <string name="about_usage">About usage</string>
+    <string name="new_usage_amount">Usage amount (Ks)</string>
+    <string name="total_usage_amount">0</string>
+    <string name="currency_unit">Ks</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+
+    <string name="bar_chart_text">By month</string>
+    <string name="pie_chart_text">By category</string>
+
+    <string name="category_list">Monthly</string>
+    <string name="item_count">0</string>
+    <string name="no_usage">No usage</string>
+
+    <string name="developer">Developer</string>
+    <string name="win_lwin_oo">Win Lwin Oo</string>
+    <string name="general">General</string>
+    <string name="management_category">Manage category</string>
+
+</resources>
